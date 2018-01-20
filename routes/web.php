@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template');
 });
+Route::get('/dudu','accueilController@index');
+Route::get('users', 'accueilController@create');
+Route::post('users', 'accueilController@store');
