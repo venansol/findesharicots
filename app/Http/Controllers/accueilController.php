@@ -10,14 +10,19 @@ class accueilController extends Controller
    // {
     //    return view('acceuil');
     //}
-
+    public function index()
+    {
+        return view('accueil');
+    }
     public function create()
     {
-        return view('acceuil');
+        return view('accueil');
     }
 
-    public function store(Request $request)
+    public function store()
     {
-        return 'Le nom est ' . $request->input('prenom')."   ".$request->input('nom');
+        return view('acceuil');
+     //   return 'Le nom est ' . $request->input('prenom')
+       //     ."   ".$request->input('ville')."   ".$request->input('age')."   ".$request->input('sexe');
     }
     }

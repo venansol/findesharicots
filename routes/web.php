@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('templates');
 });
 Route::get('/dudu','accueilController@index');
 Route::get('users', 'accueilController@create');
 Route::post('users', 'accueilController@store');
+
+Route::get('form', 'formController@create');
+Route::post('form', 'formController@store');
