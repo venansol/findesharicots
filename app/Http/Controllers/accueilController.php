@@ -18,11 +18,6 @@ class accueilController extends Controller
 
     public function store(Request $request)
     {
-         $nom =  $request->nom;
-        return view('acceuil' , function (
-        $request){
-
-        });
-
+        return 'Le nom est ' . $request->input('prenom')."   ".$request->input('nom');
     }
     }
