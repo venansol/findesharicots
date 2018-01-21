@@ -20,3 +20,6 @@ Route::post('users', 'accueilController@store');
 
 Route::get('form', 'formController@create');
 Route::post('form', 'formController@store');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
